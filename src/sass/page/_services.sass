@@ -1,0 +1,58 @@
+.services
+  margin: 2rem 0
+  &__pictures
+    width: 100%
+    padding: 0
+    margin: 0
+    max-height: 11rem
+    object-fit: cover
+    border: 1px solid #fff
+  .ele
+    @extend .margin-min
+    cursor: pointer
+    overflow: hidden
+    margin: 0
+    .row
+      margin-bottom: 0
+    .row
+    .h3
+      @extend .animated
+      @extend %slideInDown
+      position: absolute
+      background: rgba(0, 0, 0, 0.52)
+      color: #fff
+      width: 100%
+      margin: 0 auto
+      left: 0
+      right: 0
+      font:
+        size: 1.1rem
+    &__top
+      position: relative
+
+      .h2
+        width: 100%
+        background: rgba(0, 0, 0, 0.52)
+        position: absolute
+        bottom: 0
+        @extend .animated
+        @extend %slideInLeft
+        color: #fff
+        font:
+          size: .9rem
+        max-width: 100%
+        padding-left: 5px
+    &__content
+      font:
+        size: .9rem
+        family: $PR
+    &:hover
+      .h2
+        @extend %slideOutLeft
+        @include anim_opacity
+        opacity: 0
+      .h3
+        @extend %fadeOutUp
+  .detail
+    text-align: right
+    border-bottom: 1px solid #666

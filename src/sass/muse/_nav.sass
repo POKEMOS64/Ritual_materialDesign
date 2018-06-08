@@ -1,0 +1,49 @@
+nav
+  overflow: visible
+  .container
+    overflow: visible
+  .desctop-navi
+    @media(max-width: 960px)
+      display: none
+    &_list
+      display: none
+      position: absolute
+      width: 320px
+      padding: .5rem
+      left: 0
+      z-index: 9999
+      @extend .white
+      @extend .animated
+      &:after
+        position: absolute
+        @include triangle("up", 2rem, 1rem, #fff)
+        content: ''
+        top: -.5rem
+        left: 10px
+      ul
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        li
+          a
+            @extend .transparent
+            @extend .black-text
+            border-bottom: 2px solid transparent
+            margin: 0
+            padding: 10px
+            line-height: normal
+            &:hover
+              border-bottom: 2px solid red
+              @include anim_border
+    li
+      position: relative
+      a
+        &.active
+          background: #b71c1c
+        &:hover
+          //background: #b71c1c
+      &:hover
+        .desctop-navi_list
+          display: block
+          @extend %fadeInDown

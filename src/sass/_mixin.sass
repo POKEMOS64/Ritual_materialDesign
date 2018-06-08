@@ -1,0 +1,710 @@
+=bg($img, $for: png)
+	background-image: url('../img/#{$img}.#{$for}')
+
+
+//transition: {$obb} 1s, -webkit-transform 1s
+
+
+/*Разметка для колонок*/
+.color_bag
+	position: fixed
+	z-index: 98
+	width: 100%
+	.container
+		width: 100% !important
+		max-width: 1200px
+		.row
+			padding: 0
+			margin: 0
+	.col.s1
+		height: 10px
+/*Разметка для колонок*/
+
+.img-classic
+	width: auto
+
+.owl-nav
+	position: absolute
+	bottom: 0
+	width: 100%
+	top: 0
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	&>div
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+		transition: background 1s, -webkit-transform 1s
+		&:hover
+			background: rgba(4, 4, 4, 0.58)
+
+//Примеси
+%rel
+	position: relative
+%margin-min
+	margin: 1.8rem auto .5rem
+%padding-min
+	padding: 1.3rem .5rem
+
+.margin-min
+	@extend %margin-min
+.padding-min
+	@extend %padding-min
+//Примеси
+.line-in
+	a
+		border-bottom: 1px solid #666
+
+%f-row
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: row
+	justify-content: center
+	flex-wrap: wrap
+%f-col
+	flex-direction: column
+
+$width: 1200px
+$column: $width/12
+
+//.container
+	width: 8*$column
+
+input
+	&::-webkit-input-placeholder
+	&::-moz-placeholder
+	&:-ms-input-placeholder
+@mixin anim_top
+	-webkit-transition: top .5s ease-in
+  -moz-transition: top .5s ease-in
+  transition: top .5s ease-in
+@mixin anim_height
+	-webkit-transition: height 1s ease-in
+  -moz-transition: height 1s ease-in
+  transition: height 1s ease-in
+@mixin anim_opacity
+	-webkit-transition: opacity 1s ease-in
+  -moz-transition: opacity 1s ease-in
+  transition: opacity 1s ease-in
+@mixin anim_border
+	-webkit-transition: border 1s ease-in
+  -moz-transition: border 1s ease-in
+  transition: border 1s ease-in
+@mixin anim_color
+	-webkit-transition: color .5s ease-in
+  -moz-transition: color .5s ease-in
+  transition: color .5s ease-in
+.anim_opacity
+	opacity: 1 !important
+	@include anim_opacity
+@mixin anim_bg
+	-webkit-transition: background .5s ease-in
+  -moz-transition: background .5s ease-in
+  transition: background .5s ease-in
+//Анимация Elementa
+.opacity
+	opacity: 0
+.ele:hover
+	cursor: default
+	opacity: .8
+	@include anim_opacity
+.top_up
+	top: 0 !important
+	@include anim_top
+.top_stop
+	top: inherit
+	@include anim_top
+//Стандартная кнопка
+
+.btn
+	@extend .red
+	@extend .waves-effect
+	&:hover
+		opacity: .8
+		@include anim_opacity
+.center_text
+	text-align: center
+
+.hidden-mobi
+	@media(max-width: 960px)
+		display: none
+//Animation
+.animImg
+	-webkit-animation-duration: 2s
+  animation-duration: 2s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+.animated.infinite
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+//bounceInLeft
+@-webkit-keyframes bounceInLeft
+  from,
+  60%,
+  75%,
+  90%,
+  to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(-3000px, 0, 0)
+    transform: translate3d(-3000px, 0, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(25px, 0, 0)
+    transform: translate3d(25px, 0, 0)
+
+  75%
+    -webkit-transform: translate3d(-10px, 0, 0)
+    transform: translate3d(-10px, 0, 0)
+
+  90%
+    -webkit-transform: translate3d(5px, 0, 0)
+    transform: translate3d(5px, 0, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes bounceInLeft
+  from,
+  60%,
+  75%,
+  90%,
+  to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(-3000px, 0, 0)
+    transform: translate3d(-3000px, 0, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(25px, 0, 0)
+    transform: translate3d(25px, 0, 0)
+
+  75%
+    -webkit-transform: translate3d(-10px, 0, 0)
+    transform: translate3d(-10px, 0, 0)
+
+  90%
+    -webkit-transform: translate3d(5px, 0, 0)
+    transform: translate3d(5px, 0, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.bounceInLeft
+  -webkit-animation-name: bounceInLeft
+  animation-name: bounceInLeft
+%bounceInLeft
+	@extend .bounceInLeft
+//fadeInDown
+@-webkit-keyframes fadeInDown
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes fadeInDown
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.fadeInDown
+  -webkit-animation-name: fadeInDown
+  animation-name: fadeInDown
+%fadeInDown
+	@extend .fadeInDown
+//fadeOutUp
+@-webkit-keyframes fadeOutUp
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+
+
+@keyframes fadeOutUp
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+
+
+.fadeOutUp
+  -webkit-animation-name: fadeOutUp
+  animation-name: fadeOutUp
+%fadeOutUp
+	@extend .fadeOutUp
+//slideInDown
+@-webkit-keyframes slideInDown
+  from
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInDown
+  from
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.slideInDown
+  -webkit-animation-name: slideInDown
+  animation-name: slideInDown
+%slideInDown
+	@extend .slideInDown
+//slideInLeft
+@-webkit-keyframes slideInLeft
+  from
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInLeft
+  from
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.slideInLeft
+  -webkit-animation-name: slideInLeft
+  animation-name: slideInLeft
+%slideInLeft
+	@extend .slideInLeft
+//slideOutLeft
+@-webkit-keyframes slideOutLeft
+  from
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+  to
+    visibility: hidden
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+
+@keyframes slideOutLeft
+  from
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+  to
+    visibility: hidden
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+
+.slideOutLeft
+  -webkit-animation-name: slideOutLeft
+  animation-name: slideOutLeft
+%slideOutLeft
+	@extend .slideOutLeft
+//slideInUp
+@-webkit-keyframes slideInUp
+  from
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInUp
+  from
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+    visibility: visible
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.slideInUp
+  -webkit-animation-name: slideInUp
+  animation-name: slideInUp
+%slideInUp
+	@extend .slideInUp
+//BounceInRight
+@-webkit-keyframes bounceInRight
+  from,
+  60%,
+  75%,
+  90%,
+  to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  from
+    opacity: 0
+    -webkit-transform: translate3d(3000px, 0, 0)
+    transform: translate3d(3000px, 0, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(-25px, 0, 0)
+    transform: translate3d(-25px, 0, 0)
+
+  75%
+    -webkit-transform: translate3d(10px, 0, 0)
+    transform: translate3d(10px, 0, 0)
+
+  90%
+    -webkit-transform: translate3d(-5px, 0, 0)
+    transform: translate3d(-5px, 0, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes bounceInRight
+  from,
+  60%,
+  75%,
+  90%,
+  to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  from
+    opacity: 0
+    -webkit-transform: translate3d(3000px, 0, 0)
+    transform: translate3d(3000px, 0, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(-25px, 0, 0)
+    transform: translate3d(-25px, 0, 0)
+
+  75%
+    -webkit-transform: translate3d(10px, 0, 0)
+    transform: translate3d(10px, 0, 0)
+
+  90%
+    -webkit-transform: translate3d(-5px, 0, 0)
+    transform: translate3d(-5px, 0, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+.bounceInRight
+  -webkit-animation-name: bounceInRight
+  animation-name: bounceInRight
+%bounceInRight
+	@extend .bounceInRight
+//BounceOutLeft
+@-webkit-keyframes bounceOutLeft
+  20%
+    opacity: 1
+    -webkit-transform: translate3d(20px, 0, 0)
+    transform: translate3d(20px, 0, 0)
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(-2000px, 0, 0)
+    transform: translate3d(-2000px, 0, 0)
+
+
+@keyframes bounceOutLeft
+  20%
+    opacity: 1
+    -webkit-transform: translate3d(20px, 0, 0)
+    transform: translate3d(20px, 0, 0)
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(-2000px, 0, 0)
+    transform: translate3d(-2000px, 0, 0)
+
+
+.bounceOutLeft
+  -webkit-animation-name: bounceOutLeft
+  animation-name: bounceOutLeft
+%bounceOutLeft
+	@extend .bounceOutLeft
+//bounceOutRight
+@-webkit-keyframes bounceOutRight
+  20%
+    opacity: 1
+    -webkit-transform: translate3d(-20px, 0, 0)
+    transform: translate3d(-20px, 0, 0)
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(2000px, 0, 0)
+    transform: translate3d(2000px, 0, 0)
+
+
+@keyframes bounceOutRight
+  20%
+    opacity: 1
+    -webkit-transform: translate3d(-20px, 0, 0)
+    transform: translate3d(-20px, 0, 0)
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(2000px, 0, 0)
+    transform: translate3d(2000px, 0, 0)
+
+
+.bounceOutRight
+  -webkit-animation-name: bounceOutRight
+  animation-name: bounceOutRight
+%bounceOutRight
+	@extend .bounceOutRight
+//FlipInX
+@-webkit-keyframes flipInX
+  from
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+    opacity: 0
+
+  40%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+
+  60%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+    opacity: 1
+
+  80%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+
+  to
+    -webkit-transform: perspective(400px)
+    transform: perspective(400px)
+
+
+@keyframes flipInX
+  from
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+    opacity: 0
+
+  40%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+
+  60%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+    opacity: 1
+
+  80%
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+
+  to
+    -webkit-transform: perspective(400px)
+    transform: perspective(400px)
+
+
+.flipInX
+  -webkit-backface-visibility: visible !important
+  backface-visibility: visible !important
+  -webkit-animation-name: flipInX
+  animation-name: flipInX
+%flipInX
+	@extend .flipInX
+//Pulse
+@-webkit-keyframes pulse
+  from
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+  50%
+    -webkit-transform: scale3d(1.05, 1.05, 1.05)
+    transform: scale3d(1.05, 1.05, 1.05)
+
+  to
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+@keyframes pulse
+  from
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+  50%
+    -webkit-transform: scale3d(1.05, 1.05, 1.05)
+    transform: scale3d(1.05, 1.05, 1.05)
+
+  to
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+.pulse
+  -webkit-animation-name: pulse
+  animation-name: pulse
+%pulse
+	@extend .pulse
+//Swing
+@-webkit-keyframes swing
+  20%
+    -webkit-transform: rotate3d(0, 0, 1, 15deg)
+    transform: rotate3d(0, 0, 1, 15deg)
+
+  40%
+    -webkit-transform: rotate3d(0, 0, 1, -10deg)
+    transform: rotate3d(0, 0, 1, -10deg)
+
+  60%
+    -webkit-transform: rotate3d(0, 0, 1, 5deg)
+    transform: rotate3d(0, 0, 1, 5deg)
+
+  80%
+    -webkit-transform: rotate3d(0, 0, 1, -5deg)
+    transform: rotate3d(0, 0, 1, -5deg)
+
+  to
+    -webkit-transform: rotate3d(0, 0, 1, 0deg)
+    transform: rotate3d(0, 0, 1, 0deg)
+
+
+@keyframes swing
+  20%
+    -webkit-transform: rotate3d(0, 0, 1, 15deg)
+    transform: rotate3d(0, 0, 1, 15deg)
+
+  40%
+    -webkit-transform: rotate3d(0, 0, 1, -10deg)
+    transform: rotate3d(0, 0, 1, -10deg)
+
+  60%
+    -webkit-transform: rotate3d(0, 0, 1, 5deg)
+    transform: rotate3d(0, 0, 1, 5deg)
+
+  80%
+    -webkit-transform: rotate3d(0, 0, 1, -5deg)
+    transform: rotate3d(0, 0, 1, -5deg)
+
+  to
+    -webkit-transform: rotate3d(0, 0, 1, 0deg)
+    transform: rotate3d(0, 0, 1, 0deg)
+
+
+.swing
+  -webkit-transform-origin: top center
+  transform-origin: top center
+  -webkit-animation-name: swing
+  animation-name: swing
+%swing
+	@extend .swing
+//Animation
+///Выпадающее меню на мобилке//
+.end
+	@extend %bounceOutRight
+.start
+	@extend %bounceInRight
+.right_anim_panel
+	@extend .animated
+	position: fixed
+	@extend .white
+	width: 280px
+	bottom: 0
+	top: 0
+	height: 100%
+	right: 0
+	z-index: 99
+	a
+		font:
+			size: .8rem
+
+.hidden-mobi
+	@media(max-width: 960px)
+		display: none
+.hidden-desc
+	@media(min-width: 961px)
+		display: none
+.start_menu
+	@extend .animated
+	z-index: 1000
+	position: fixed
+	right: 0
+	top: 5%
+	.btn
+		@extend .animated
+		display: none
+		&.active
+			display: block
+///Выпадающее меню на мобилке//
+
+//
+.fix
+	&::before
+		@include triangle("up", 2rem, 1rem, #b25c9c)
+		content: ""

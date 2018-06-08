@@ -1,0 +1,80 @@
+html
+	font-size: 20px
+	@media(max-width:1600px)
+		//font-size: 16px
+	@media(max-width:1440px)
+		//font-size: 15px
+	@media(max-width:1200px)
+		//font-size: 15px
+	@media(max-width:480px)
+		font-size: 13px
+
+$PR: 'Proxima'
+$CI: 'Circe'
+$AC: 'Acrom'
+
+body
+
+	font:
+		family: $CI
+.text
+	img
+		opacity: 0
+
+.container
+	overflow: hidden
+	width: 100% !important
+	max-width: 1200px
+	//max-width: 1170px
+	margin: 0 auto
+	@media(max-width:960px)
+		width: 98%
+		padding: 0 2%
+		box-sizing: border-box
+
+
+img,
+iframe
+	width: 100%
+	margin: auto
+	display: block
+	margin-top: 1rem
+	margin-bottom: 1rem
+/*Обязательный параметр!!!!!!!!*/
+
+a
+	color: #000000
+
+h1
+	font-size: 3.157em
+	color: #fff
+h2
+	font-size: 2.369em
+h3
+	font-size: 1.777em
+p
+	font-size: 1em
+.h1
+	font-size: 1.3em
+.h2
+	font-size: 1.1em
+	font-family: $PR
+	font-weight: 300
+.h3
+	position: relative
+	font-size: 1.333rem
+	font-family: $CI
+	font-weight: 400
+	border-bottom: 1px solid #e0e0e0
+
+.event__text
+	ul
+		li
+			margin-left: 15px
+			i
+				position: relative
+				top: 5px
+				margin-right: 5px
+
+//#b0bec5 blue-grey lighten-3
+//#b71c1c red darken-4

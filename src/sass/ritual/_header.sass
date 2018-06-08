@@ -1,0 +1,46 @@
+header
+  position: relative
+  z-index: 9
+  .row
+    margin-bottom: 0
+  .navi
+    &_list
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      li
+        //margin: 0 .5rem
+        a
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          color: #9e9e9e
+          font:
+            family: $AC
+            size: .9rem
+          &:hover
+            @include anim_color
+            @extend .teal-text.text-lighten-3
+            i
+              @include anim_color
+              @extend .teal-text.text-lighten-3
+        i
+          background: #878787
+          color: #e4e4e4
+          box-shadow: 0.1rem 0.1rem 0 0 rgba(0, 0, 0, 0.125)
+          border-radius: 50px
+          padding: .3rem
+          margin-right: .3rem
+  .logo
+    margin: 1rem 0
+    font:
+      size: 1rem
+    color: #fff
+    span
+      padding: .3rem .5rem
+      border-radius: 6px
+      color: #fff
