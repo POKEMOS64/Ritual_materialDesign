@@ -3,8 +3,45 @@
     &:hover
   a
     color: #666
-
     &:hover
       @include anim_color
 
       @extend .teal-text.text-lighten-3
+  .page_uslugi
+    margin-bottom: 1rem
+    position: relative
+    &>div
+      position: relative
+      z-index: 9
+    .row.box
+      background: transparent
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      &>div
+        position: relative
+        margin: 1rem auto
+    .img
+      padding-top: .75rem
+      img
+        margin: 0
+    .info
+      position: relative
+      border-top: 5px solid #ef5350
+      padding-top: 2rem
+      .link-up
+        position: absolute
+        top: -1.5rem
+        left: 0
+        right: 0
+        margin: 0 auto
+      .h1
+        text-align: center
+        padding-bottom: 1rem
+        font:
+          size: 1.3rem
+          weight: 300
+        text-transform: uppercase
+    &.links

@@ -1,2 +1,35 @@
 .block_info
+  .container
+    position: relative
+  .submenu
+    overflow: hidden
+    margin: 0
+    padding: .3rem
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    li
+      margin: 0 .5rem
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -10px
+        width: 100%
+        left: 0
+        height: 3px
+        background: #fff
+        @extend .animated
+        @extend .fadeInDown
+      &:hover
+        &::after
+          bottom: 0
+          @extend .fadeInUp
+      a
+        display: block
+        padding: .8rem .5rem 0
+        color: #fff
+        @extend .acolor
+
 .breadcrumb
