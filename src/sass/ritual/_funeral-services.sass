@@ -1,11 +1,13 @@
 .funeral-services
-  padding: 1rem 0
-
+  padding: 2rem 0
   .container
     padding: 2rem 0
+    overflow: visible
   .h1
     padding: 1rem .75rem
   &.pictures_block
+    position: relative
+    z-index: 89
     padding: 0
     margin: 2rem
     .container
@@ -18,3 +20,26 @@
           font:
             size: 1.3rem
           text-transform: uppercase
+        .collection
+          li
+            &:hover
+              background: #ef5350
+              @include anim_bg
+              @include anim_color
+              color: #fff
+  form
+    .check
+      @extend .f-str
+      justify-content: space-between
+      margin-top: 1rem
+      @media(max-width: 760px)
+        flex-wrap: wrap
+        span
+          display: block
+          height: auto
+          width: 100%
+      span
+        &:last-child
+          min-width: 130px
+          text-align: right
+          padding: .3rem

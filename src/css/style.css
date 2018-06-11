@@ -7992,6 +7992,16 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .no-margin {
   margin: 0 -.75rem; }
 
+.link_buton-anima {
+  position: absolute;
+  z-index: 99;
+  background: #000; }
+  .link_buton-anima .fix-lable {
+    width: 10rem;
+    position: absolute;
+    top: -1rem;
+    min-height: 2rem; }
+
 .path {
   border-style: solid;
   height: 0;
@@ -8047,7 +8057,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       text-align: center;
       margin-bottom: 1rem; }
 
-.f-str, .card_upd .pagetitle {
+.f-str, .link_buton-anima .fix-lable, .card_upd .pagetitle, .funeral-services form .check {
   display: -webkit-flex;
   display: -ms-flex;
   display: -webkit-box;
@@ -8619,12 +8629,15 @@ header {
       text-transform: uppercase; }
 
 .funeral-services {
-  padding: 1rem 0; }
+  padding: 2rem 0; }
   .funeral-services .container {
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    overflow: visible; }
   .funeral-services .h1 {
     padding: 1rem .75rem; }
   .funeral-services.pictures_block {
+    position: relative;
+    z-index: 89;
     padding: 0;
     margin: 2rem; }
     .funeral-services.pictures_block .container {
@@ -8635,6 +8648,34 @@ header {
         text-align: center;
         font-size: 1.3rem;
         text-transform: uppercase; }
+      .funeral-services.pictures_block .container .row .collection li:hover {
+        background: #ef5350;
+        -webkit-transition: background 0.5s ease-in;
+          -webkit-transition--moz-transition: background .5s ease-in;
+          -webkit-transition-transition: background .5s ease-in;
+        -webkit-transition: color 0.5s ease-in;
+          -webkit-transition--moz-transition: color .5s ease-in;
+          -webkit-transition-transition: color .5s ease-in;
+        color: #fff; }
+  .funeral-services form .check {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem; }
+    @media (max-width: 760px) {
+      .funeral-services form .check {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+        .funeral-services form .check span {
+          display: block;
+          height: auto;
+          width: 100%; } }
+    .funeral-services form .check span:last-child {
+      min-width: 130px;
+      text-align: right;
+      padding: .3rem; }
 
 .basement h2 {
   text-align: center; }
