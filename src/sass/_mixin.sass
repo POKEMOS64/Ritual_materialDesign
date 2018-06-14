@@ -1,8 +1,5 @@
 =bg($img, $for: png)
 	background-image: url('../img/#{$img}.#{$for}')
-
-
-
 //transition: {$obb} 1s, -webkit-transform 1s
 
 
@@ -884,6 +881,7 @@ input
 
 .link_buton-anima
 	position: absolute
+	width: 100%
 	z-index: 99
 	background: #000
 	.fix-lable
@@ -892,6 +890,11 @@ input
 		top: -1rem
 		min-height: 2rem
 		@extend .f-str
+		&.right
+			font:
+				size: 1.3rem
+			top: -5rem
+			height: 3.8rem
 
 
 
@@ -951,7 +954,8 @@ input
 	flex-direction: row
 	justify-content: center
 	align-items: center
-
+.clear
+	height: 2rem
 //
 .fix
 	&::before

@@ -59,85 +59,85 @@
 .materialize-red-text.text-darken-4 {
   color: #8b1014 !important; }
 
-.red, .btn, .btn-large, .btn-small, .basement {
+.red, .btn, .btn-large, .btn-small {
   background-color: #F44336 !important; }
 
 .red-text {
   color: #F44336 !important; }
 
-.red.lighten-5, .lighten-5.btn, .lighten-5.btn-large, .lighten-5.btn-small, .lighten-5.basement {
+.red.lighten-5, .lighten-5.btn, .lighten-5.btn-large, .lighten-5.btn-small {
   background-color: #FFEBEE !important; }
 
 .red-text.text-lighten-5 {
   color: #FFEBEE !important; }
 
-.red.lighten-4, .lighten-4.btn, .lighten-4.btn-large, .lighten-4.btn-small, .lighten-4.basement {
+.red.lighten-4, .lighten-4.btn, .lighten-4.btn-large, .lighten-4.btn-small {
   background-color: #FFCDD2 !important; }
 
 .red-text.text-lighten-4 {
   color: #FFCDD2 !important; }
 
-.red.lighten-3, .lighten-3.btn, .lighten-3.btn-large, .lighten-3.btn-small, .lighten-3.basement {
+.red.lighten-3, .lighten-3.btn, .lighten-3.btn-large, .lighten-3.btn-small {
   background-color: #EF9A9A !important; }
 
 .red-text.text-lighten-3 {
   color: #EF9A9A !important; }
 
-.red.lighten-2, .lighten-2.btn, .lighten-2.btn-large, .lighten-2.btn-small, .lighten-2.basement {
+.red.lighten-2, .lighten-2.btn, .lighten-2.btn-large, .lighten-2.btn-small {
   background-color: #E57373 !important; }
 
 .red-text.text-lighten-2 {
   color: #E57373 !important; }
 
-.red.lighten-1, .lighten-1.btn, .lighten-1.btn-large, .lighten-1.btn-small, .lighten-1.basement, .slider-widget__info {
+.red.lighten-1, .lighten-1.btn, .lighten-1.btn-large, .lighten-1.btn-small, .slider-widget__info {
   background-color: #EF5350 !important; }
 
 .red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
-.red.darken-1, .darken-1.btn, .darken-1.btn-large, .darken-1.btn-small, .darken-1.basement {
+.red.darken-1, .darken-1.btn, .darken-1.btn-large, .darken-1.btn-small {
   background-color: #E53935 !important; }
 
 .red-text.text-darken-1 {
   color: #E53935 !important; }
 
-.red.darken-2, .darken-2.btn, .darken-2.btn-large, .darken-2.btn-small, .darken-2.basement {
+.red.darken-2, .darken-2.btn, .darken-2.btn-large, .darken-2.btn-small {
   background-color: #D32F2F !important; }
 
 .red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3, .darken-3.btn, .darken-3.btn-large, .darken-3.btn-small, .darken-3.basement {
+.red.darken-3, .darken-3.btn, .darken-3.btn-large, .darken-3.btn-small {
   background-color: #C62828 !important; }
 
 .red-text.text-darken-3 {
   color: #C62828 !important; }
 
-.red.darken-4, .darken-4.btn, .darken-4.btn-large, .darken-4.btn-small, .darken-4.basement {
+.red.darken-4, .darken-4.btn, .darken-4.btn-large, .darken-4.btn-small {
   background-color: #B71C1C !important; }
 
 .red-text.text-darken-4, footer a {
   color: #B71C1C !important; }
 
-.red.accent-1, .accent-1.btn, .accent-1.btn-large, .accent-1.btn-small, .accent-1.basement {
+.red.accent-1, .accent-1.btn, .accent-1.btn-large, .accent-1.btn-small {
   background-color: #FF8A80 !important; }
 
 .red-text.text-accent-1 {
   color: #FF8A80 !important; }
 
-.red.accent-2, .accent-2.btn, .accent-2.btn-large, .accent-2.btn-small, .accent-2.basement {
+.red.accent-2, .accent-2.btn, .accent-2.btn-large, .accent-2.btn-small {
   background-color: #FF5252 !important; }
 
 .red-text.text-accent-2 {
   color: #FF5252 !important; }
 
-.red.accent-3, .accent-3.btn, .accent-3.btn-large, .accent-3.btn-small, .accent-3.basement {
+.red.accent-3, .accent-3.btn, .accent-3.btn-large, .accent-3.btn-small {
   background-color: #FF1744 !important; }
 
 .red-text.text-accent-3 {
   color: #FF1744 !important; }
 
-.red.accent-4, .accent-4.btn, .accent-4.btn-large, .accent-4.btn-small, .accent-4.basement {
+.red.accent-4, .accent-4.btn, .accent-4.btn-large, .accent-4.btn-small {
   background-color: #D50000 !important; }
 
 .red-text.text-accent-4 {
@@ -1592,7 +1592,7 @@
 .white, .right_anim_panel {
   background-color: #FFFFFF !important; }
 
-.white-text, .card_upd .descriptions .down_click, .basement, .slider-widget__info {
+.white-text, .card_upd .descriptions .down_click, .slider-widget__info {
   color: #FFFFFF !important; }
 
 .transparent {
@@ -6622,11 +6622,11 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     visibility: visible;
     -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
             animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
+    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    -o-transition: opacity .3s, transform .3s, visibility 0s 1s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
 
 .tap-target {
   position: absolute;
@@ -6677,11 +6677,11 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     transition: transform .3s, -webkit-transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    -o-transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -7994,6 +7994,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .link_buton-anima {
   position: absolute;
+  width: 100%;
   z-index: 99;
   background: #000; }
   .link_buton-anima .fix-lable {
@@ -8001,6 +8002,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     position: absolute;
     top: -1rem;
     min-height: 2rem; }
+    .link_buton-anima .fix-lable.right {
+      font-size: 1.3rem;
+      top: -5rem;
+      height: 3.8rem; }
 
 .path {
   border-style: solid;
@@ -8076,6 +8081,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.clear {
+  height: 2rem; }
 
 .fix::before {
   border-style: solid;
@@ -8632,7 +8640,8 @@ header {
   padding: 2rem 0; }
   .funeral-services .container {
     padding: 2rem 0;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
   .funeral-services .h1 {
     padding: 1rem .75rem; }
   .funeral-services.pictures_block {
@@ -8677,14 +8686,51 @@ header {
       text-align: right;
       padding: .3rem; }
 
-.basement h2 {
-  text-align: center; }
-
-.basement a {
-  color: #fff;
-  padding: 5px 1rem !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+.catalog .item {
+  margin: 1rem auto; }
+  .catalog .item img {
+    margin: 0; }
+  .catalog .item .info {
+    position: relative;
+    padding: 2rem 0 .3rem;
+    border-top: 3px solid #f44336; }
+    .catalog .item .info .link-up {
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    .catalog .item .info .h1 {
+      text-align: center; }
+    .catalog .item .info .price {
+      width: 100%;
+      min-height: 2rem;
+      text-align: center;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .catalog .item .info .modal_click {
+      position: relative; }
+      .catalog .item .info .modal_click button {
+        width: 100%;
+        left: 0;
+        -webkit-border-radius: 0;
+                border-radius: 0; }
+        .catalog .item .info .modal_click button i {
+          right: 0;
+          height: 36px; }
+        .catalog .item .info .modal_click button:hover i {
+          width: 100%; }
 
 footer {
   padding: 4rem 0; }
